@@ -53,8 +53,8 @@ def cla_regiao_br(end_uf):
 def tratar_faturamento(df):
     df = df.loc[:, [
         'participacao', 'proposta', 'num_proposta', 'data_assinatura_proposta',
-        'data_vigencia', 'cpf', 'nome_proponente', 'qualificacao', 'data_nascimento', 'sexo', 'estado_civil', 'end_cidade', 'end_uf',
-        'num_beneficio', 'tipo_beneficio', 'ultimo_beneficio', 'ultimo_desconto',
+        'data_vigencia', 'cpf', 'nome_proponente', 'qualificacao', 'data_nascimento', 'sexo', 
+        'estado_civil', 'end_cidade', 'end_uf','ultimo_desconto',
         'ultimo_capital', 'forma_pagamento', 'parcelas_aberto',
         'data_ultimo_pagamento', 'programa_beneficio', 'promotor', 'distribuidor',
         'canal_distribuicao', 'aposentado', 'pensionista','status_participacao']]
