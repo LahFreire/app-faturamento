@@ -102,7 +102,7 @@ def tratar_faturamento(df):
 
 # Interface Streamlit
 st.set_page_config(page_title="Tratador de Faturamento", layout="centered")
-st.title("🔧 Gerador de Faturamento")
+st.title("🔧 Gerador de Faturamento Instituto - Programa de Benefícios")
 
 # Upload do arquivo
 uploaded_file = st.file_uploader("Envie a base para Faturamento (.csv)", type="csv")
