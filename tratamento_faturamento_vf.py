@@ -85,9 +85,9 @@ def tratar_faturamento(df):
 
         if 'ativo' in status_participacao and '1a' not in status_participacao and 'suspenso' not in status_participacao and parcelas_aberto >= 0:
             return 'pagamento regular'
-        elif '1a' in status_participacao and parcelas_aberto == 1:
+        elif '1a' in status_participacao and parcelas_aberto == 0:
             return 'pagamento adesão'
-        elif '1a' in status_participacao and parcelas_aberto > 1:
+        elif '1a' in status_participacao and parcelas_aberto >= 1:
             return 'nova tentativa adesão'
         elif 'suspenso' in status_participacao:
             return 'regularização'
