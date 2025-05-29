@@ -98,6 +98,7 @@ def tratar_faturamento(df):
         lambda row: classifica_faturado(row['status_participacao'], row['parcelas_aberto']),
         axis=1
     )
+    df = df.sort_values(by='tipo_faturamento', ascending=True)
     return df
 
 # Interface Streamlit
